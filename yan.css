@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #0f2027, #000);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 22px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+/* panel input */
+.panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 20px 18px;
+}
+
+.panel input {
+  padding: 10px;
+  width: 160px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.panel button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+}
+
+.panel button:hover {
+  transform: scale(1.05);
+}
+
+/* status */
+.status {
+  margin: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.valid {
+  color: #00ff9c;
+}
+
+.invalid-text {
+  color: #ff5c5c;
+}
+
+/* blockchain */
+.chain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 16px 40px;
+}
+
+.block {
+  background: linear-gradient(135deg, #0d0d0d, #1b1b1b);
+  border: 2px solid #00f2fe;
+  box-shadow: 0 0 16px #00f2fe55;
+  border-radius: 16px;
+  padding: 14px;
+  margin: 12px;
+  width: 260px;
+  text-align: left;
+  animation: pop 0.4s ease;
+}
+
+.block.invalid {
+  border-color: #ff5c5c;
+  box-shadow: 0 0 16px #ff5c5c88;
+}
+
+.block h3 {
+  margin-top: 0;
+  color: #4facfe;
+  text-align: center;
+}
+
+.block input {
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.hash {
+  font-size: 11px;
+  word-break: break-all;
+  opacity: 0.75;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

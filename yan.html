@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>cool blockchain</title>
+  <link rel="stylesheet" href="yan.css">
+</head>
+<body>
+
+  <h1>⚡ cool blockchain simulator</h1>
+  <p class="subtitle">simulasi blockchain dengan data transaksi lengkap</p>
+
+  <div class="panel">
+    <input type="text" id="fromInput" placeholder="pengirim">
+    <input type="text" id="toInput" placeholder="penerima">
+    <input type="number" id="amountInput" placeholder="jumlah">
+    <input type="text" id="noteInput" placeholder="catatan transaksi">
+    <button onclick="addBlock()">⛏️ mine block</button>
+    <button onclick="validateChain()">🔍 cek blockchain</button>
+  </div>
+
+  <p id="status" class="status valid">blockchain aman</p>
+
+  <div id="blockchain" class="chain"></div>
+
+  <script src="yan.js"></script>
+</body>
+</html>
